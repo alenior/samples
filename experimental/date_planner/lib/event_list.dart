@@ -43,10 +43,8 @@ class EventList extends StatelessWidget {
                       ),
                     );
 
-                    if (newEvent != null) {
-                      events.add(newEvent);
-                    }
-                  },
+                    events.add(newEvent);
+                                    },
                 ),
               ),
               SliverList.list(
@@ -77,14 +75,8 @@ class EventList extends StatelessWidget {
                                   ),
                                 ),
                               );
-                              if (updatedEvent == null) {
-                                // The editor passes back null when it deleted
-                                // the element.
-                                events.delete(e);
-                              } else {
-                                events.update(e, updatedEvent);
-                              }
-                            },
+                              events.update(e, updatedEvent);
+                                                        },
                           )
                       ],
                     ),
