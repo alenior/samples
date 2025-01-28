@@ -43,7 +43,7 @@ class EventList extends StatelessWidget {
                       ),
                     );
 
-                    events.add(newEvent);
+                    events.add(newEvent!);
                                     },
                 ),
               ),
@@ -75,7 +75,7 @@ class EventList extends StatelessWidget {
                                   ),
                                 ),
                               );
-                              events.update(e, updatedEvent);
+                              events.update(e, updatedEvent!);
                                                         },
                           )
                       ],
