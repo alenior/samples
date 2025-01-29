@@ -87,8 +87,15 @@ class _CartTotal extends StatelessWidget {
             const SizedBox(width: 24),
             FilledButton(
               onPressed: () {
+                var cart = context.read<CartModel>();
+                String itemNames =
+                    cart.items.map((item) => item.name).join(' - \$ 42 + ');
+
                 ScaffoldMessenger.of(context).showSnackBar(
-                    const SnackBar(content: Text('Buying not supported yet.')));
+                  SnackBar(
+                      content: Text(
+                          'ALENCAR JÚNIOR INFORMA: $itemNames - \$ 42 = Total \$ ${cart.totalPrice}.')),
+                );
               },
               style: TextButton.styleFrom(foregroundColor: Colors.white),
               child: const Text('BUY'),
