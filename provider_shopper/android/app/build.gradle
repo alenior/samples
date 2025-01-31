@@ -23,6 +23,8 @@ if (flutterVersionName == null) {
 }
 
 android {
+    compileSdkVersion 34
+    
     namespace "dev.flutter.provider_shopper"
     compileSdkVersion flutter.compileSdkVersion
     ndkVersion flutter.ndkVersion
@@ -65,3 +67,6 @@ flutter {
 }
 
 dependencies {}
+
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-kapt'

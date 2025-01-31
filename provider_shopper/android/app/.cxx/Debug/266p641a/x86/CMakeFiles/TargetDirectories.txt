@@ -1,0 +1,2 @@
+C:/Users/alenc/Documents/GitHub/IFCE/P6/PDM/samples/provider_shopper/android/app/.cxx/Debug/266p641a/x86/CMakeFiles/edit_cache.dir
+C:/Users/alenc/Documents/GitHub/IFCE/P6/PDM/samples/provider_shopper/android/app/.cxx/Debug/266p641a/x86/CMakeFiles/rebuild_cache.dir
